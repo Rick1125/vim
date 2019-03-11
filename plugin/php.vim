@@ -10,8 +10,9 @@ augroup phpSyntaxOverride
     autocmd!
     autocmd FileType php call PhpSyntaxOverride()
 augroup END
+
 autocmd FileType php setlocal omnifunc=phpcomplete_extended#CompletePHP
+autocmd FileType php noremap <buffer> <leader>f :call PhpCsFixerFixFile()<cr>"
 
 let g:php_cs_fixer_level = "symfony"
 let g:syntastic_php_checkers = ['php', 'phpmd', 'phpcs']
-"nnoremap <silent><leader>f :call PhpCsFixerFixFile()<CR>

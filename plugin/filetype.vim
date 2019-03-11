@@ -12,7 +12,6 @@ autocmd BufRead,BufNew .vimrc map <buffer> <leader><space> :w!<cr>:source %<cr>
 
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
-autocmd! BufRead,BufNewFile *.json set filetype=json
 augroup json_autocmd
     autocmd!
     autocmd FileType json set autoindent
@@ -29,6 +28,7 @@ autocmd FileType html,css,twig EmmetInstall
 
 autocmd FileType javascript noremap <buffer> <leader>f :call JsBeautify()<cr>
 " for json
+autocmd! BufRead,BufNewFile *.json set filetype=json
 autocmd FileType json noremap <buffer> <leader>f :call JsonBeautify()<cr>
 " " for jsx
 autocmd FileType jsx noremap <buffer> <leader>f :call JsxBeautify()<cr>
@@ -36,4 +36,3 @@ autocmd FileType jsx noremap <buffer> <leader>f :call JsxBeautify()<cr>
 autocmd FileType html,twig noremap <buffer> <leader>f :call HtmlBeautify()<cr>
 " " for css or scss
 autocmd FileType css noremap <buffer> <leader>f :call CSSBeautify()<cr>"
-autocmd FileType php noremap <buffer> <leader>f :call PhpCsFixerFixFile()<cr>"
