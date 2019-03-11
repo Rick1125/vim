@@ -1,0 +1,1 @@
+/Users/rick/.vim/bundle/gocode/vim/ftplugin/go/gocomplete.vim
