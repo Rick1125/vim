@@ -1,5 +1,5 @@
 set encoding=utf-8
-set rtp+=/usr/local/Cellar/fzf/0.21.0-1
+set rtp+=/usr/local/Cellar/fzf/0.21.1
 
 call plug#begin('~/.vim/bundle')
 
