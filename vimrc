@@ -1,6 +1,10 @@
-set rtp+=/usr/local/Cellar/fzf/0.17.5
+set encoding=utf-8
+set rtp+=/usr/local/Cellar/fzf/0.21.0-1
 
 call plug#begin('~/.vim/bundle')
+
+Plug 'vimwiki/vimwiki'
+Plug 'ap/vim-css-color'
 
 Plug 'vim-scripts/L9'
 Plug 'vim-scripts/netrw.vim'
@@ -18,7 +22,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'renyard/vim-git-flow-format'
 Plug 'majutsushi/tagbar'
 Plug 'vim-scripts/taglist.vim'
-Plug 'valloric/youcompleteme'
+"Plug 'valloric/youcompleteme'
 Plug 'godlygeek/tabular'
 Plug 'mattn/emmet-vim'
 Plug 'tpope/vim-markdown'

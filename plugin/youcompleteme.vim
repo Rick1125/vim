@@ -15,7 +15,7 @@
 
 " Set <space> as primary trigger
 " inoremap <return> <c-r>=Ulti_ExpandOrEnter()<cr>
-
+"
 " 输入第2个字符开始补全
 let g:ycm_min_num_of_chars_for_completion=2
 " 开启语义补全
@@ -29,3 +29,4 @@ let g:ycm_filetype_blacklist = {
 let g:UltiSnipsExpandTrigger="<c-k>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:ycm_confirm_extra_conf=0
